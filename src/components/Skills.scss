@@ -1,0 +1,41 @@
+.skills {
+  background: rgba(0, 0, 0, 0.26);
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @include media("<=tablet") {
+    display: none;
+  }
+  i {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.phono {
+  background: rgba(0, 0, 0, 0.26);
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include media(">=tablet") {
+    display: none;
+  }
+  .skillsphono1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    i {
+      padding: 1rem 1.5rem;
+    }
+  }
+  .skillsphono2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    i {
+      padding: 1rem 1.5rem;
+    }
+  }
+}

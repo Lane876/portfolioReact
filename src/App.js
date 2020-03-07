@@ -1,24 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { Route, Switch, Link } from "react-router-dom";
+import gsap from "gsap";
+import "./Style/App.scss";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import IntroOverlay from "./components/IntroOverlay";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 
 function App() {
+  useEffect(() => {
+    const tl = gsap.timeline();
+
+    tl.from(".title h2", 1.8, {
+      opacity: 0,
+      y: 100,
+      ease: "power4.out",
+      delay: 1,
+      skewY: 10,
+      stagger: {
+        amount: 0.3
+      }
+    }).to(".intro", 1.6, {
+      height: 0,
+      ease: "expo.inOut",
+      stagger: 0.4
+    });
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <IntroOverlay />
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/skills" component={Skills} />
+        <Route path="/projects" component={Projects} />
+      </Switch>
     </div>
   );
 }
