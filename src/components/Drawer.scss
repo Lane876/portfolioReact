@@ -1,0 +1,18 @@
+.drawer.x {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 100vh;
+  background: black;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.x {
+  transform: translateX(0%);
+}

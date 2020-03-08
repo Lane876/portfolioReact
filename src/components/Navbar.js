@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Drawer from "./Drawer";
+const Navbar = props => {
+  const [drawerOpen, setdrawerOpen] = useState(false);
+  let toggle = drawerOpen;
+  if (toggle) {
+    toggle = "hamburger close";
+  } else {
+    toggle = "hamburger";
+  }
 
-const Navbar = () => {
   return (
     <div className="wraper">
       <div className="logo">
@@ -21,11 +29,12 @@ const Navbar = () => {
           <a href="/">Get in touch</a>
         </Link>
       </nav>
-      <div className="hamburger">
+      <div className={toggle} onClick={() => setdrawerOpen(!drawerOpen)}>
         <span></span>
         <span></span>
         <span></span>
       </div>
+      <Drawer toggle={toggle} />
     </div>
   );
 };

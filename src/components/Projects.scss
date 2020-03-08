@@ -32,7 +32,7 @@
   }
 
   &:hover {
-    cursor: pointer;
+    // cursor: pointer;
 
     & .background-image {
       transform: scale(1.1);
@@ -41,6 +41,7 @@
 
     & .content {
       opacity: 0.9;
+      cursor: pointer;
     }
   }
 
