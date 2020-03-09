@@ -4,7 +4,12 @@ const Home = () => {
   return (
     <div className="main">
       <div className="title">
-        <h2>Hi, I am Milan,</h2>
+        <h2>
+          Hi,{" "}
+          <span className="media">
+            I am <span className="logo">M</span>ilan,
+          </span>
+        </h2>
         <h2>A Frontend Developer</h2>
       </div>
       {/* <div className="spacer"></div> */}
