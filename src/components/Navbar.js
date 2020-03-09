@@ -29,15 +29,9 @@ class Navbar extends Component {
         </div>
         <div className="spacer"></div>
         <nav>
-          <Link to="/projects">
-            <a href=".projects">Projects</a>
-          </Link>
-          <Link to="/skills">
-            <a href="/">Skills</a>
-          </Link>
-          <Link to="/contact">
-            <a href="/">Get in touch</a>
-          </Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/skills">Skills</Link>
+          <Link to="/contact">Get in touch</Link>
         </nav>
         <Hamburger toggle={this.toggleDrawer} btn={this.state.drawerOpen} />
         <Drawer toggle={this.state.drawerOpen} openclose={this.toggleDrawer} />

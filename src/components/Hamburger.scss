@@ -20,12 +20,12 @@
 }
 .close {
   span:nth-child(1) {
-    transform: rotate(33deg);
+    transform: rotate(35deg);
   }
   span:nth-child(2) {
     transform: scale(0);
   }
   span:nth-child(3) {
-    transform: rotate(-33deg);
+    transform: rotate(-35deg);
   }
 }

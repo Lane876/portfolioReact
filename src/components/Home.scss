@@ -1,16 +1,15 @@
 .main {
-  height: 90vh;
+  height: 85vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: white;
-  padding: 0 2rem;
+  padding: 0 2.5rem;
   .title {
     display: flex;
     flex-direction: column;
     align-items: left;
     margin-bottom: 5rem;
-    // margin-left: 5rem;
     h2 {
       font-size: 2.5rem;
       margin: 0;
@@ -18,22 +17,25 @@
       color: white;
       mix-blend-mode: difference;
       @include media("<=tablet") {
-        font-size: 2rem;
+        font-size: 2.5rem;
       }
       @include media("<501px") {
-        font-size: 1.5rem;
+        font-size: 2rem;
       }
       .logo {
         color: red;
         font-weight: 900;
         font-size: 3rem;
         @include media("<tablet") {
-          font-size: 2.5rem;
+          font-size: 3rem;
+          font-weight: 900;
         }
       }
     }
   }
-
+  .spacer {
+    min-width: 20vw;
+  }
   .spacer-social {
     display: flex;
     justify-content: space-between;
@@ -42,7 +44,9 @@
     @include media("<=tablet") {
       flex-direction: column;
       height: 25vh;
+      align-items: flex-end;
     }
+
     a {
       color: black;
       i {

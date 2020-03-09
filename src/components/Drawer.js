@@ -12,27 +12,25 @@ const Drawer = props => {
       <div className="drawer-links">
         <ul>
           <li>
-            <Link to="/" onClick={props.openclose}>
-              <a className="logo" href="/">
-                M.
-              </a>
+            <Link to="/" onClick={props.openclose} className="logo">
+              M.
             </Link>
           </li>
 
           <li>
             <Link to="/projects" onClick={props.openclose}>
-              <a href="/">Projects</a>
+              Projects
             </Link>
           </li>
 
           <li>
             <Link to="/skills" onClick={props.openclose}>
-              <a href="/skills">Skills</a>
+              Skills
             </Link>
           </li>
           <li>
             <Link to="/contact" onClick={props.openclose}>
-              <a href="/contact">Contact</a>
+              contact
             </Link>
           </li>
         </ul>

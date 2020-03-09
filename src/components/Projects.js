@@ -13,7 +13,11 @@ const Projects = () => {
             }}
           />
           <div className="content">
-            <a href="https://Lane876.github.io/Hotel/" target="_blank">
+            <a
+              href="https://Lane876.github.io/Hotel/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="title">
                 <h2>Hotel website</h2>
                 <h3>Created with ReactJS</h3>
