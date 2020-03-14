@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import IntroOverlay from "./components/IntroOverlay";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   const [animationComplete, setanimationComplete] = useState(false);
@@ -42,6 +43,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/skills" component={Skills} />
         <Route path="/projects" component={Projects} />
+        <Route path="/contact" component={Contact} />
       </Switch>
     </div>
   );
