@@ -3,7 +3,7 @@
   height: 80vh;
   justify-content: space-between;
   align-items: center;
-  padding: 10rem;
+  padding: 4rem;
 
   @include media("<tablet") {
     flex-direction: column;
@@ -19,17 +19,19 @@
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
 .group {
   position: relative;
   margin: 45px 0;
-  width: 30vw;
+  width: 50vw;
 
   @include media("<tablet") {
     min-width: 90vw;
+    position: absolute;
+    top: 10rem;
   }
 
   .form-input {

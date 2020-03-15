@@ -6,8 +6,11 @@ class Contact extends Component {
       <div className="contact">
         <div className="info">
           <h2>Do you want to send</h2>
+
           <h2>me a message?</h2>
-          <h2>Do it :)</h2>
+          <br />
+          <br />
+          <h2>...do it! :)</h2>
         </div>
 
         <form
