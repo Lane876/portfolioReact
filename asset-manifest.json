@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolioReact/static/css/main.73b32d4b.chunk.css",
+    "main.js": "/portfolioReact/static/js/main.904e8d7e.chunk.js",
+    "main.js.map": "/portfolioReact/static/js/main.904e8d7e.chunk.js.map",
+    "runtime-main.js": "/portfolioReact/static/js/runtime-main.65b0f2ad.js",
+    "runtime-main.js.map": "/portfolioReact/static/js/runtime-main.65b0f2ad.js.map",
+    "static/js/2.74290d08.chunk.js": "/portfolioReact/static/js/2.74290d08.chunk.js",
+    "static/js/2.74290d08.chunk.js.map": "/portfolioReact/static/js/2.74290d08.chunk.js.map",
+    "index.html": "/portfolioReact/index.html",
+    "precache-manifest.9f77e64b1572240a02b8971ea78d2c4c.js": "/portfolioReact/precache-manifest.9f77e64b1572240a02b8971ea78d2c4c.js",
+    "service-worker.js": "/portfolioReact/service-worker.js",
+    "static/css/main.73b32d4b.chunk.css.map": "/portfolioReact/static/css/main.73b32d4b.chunk.css.map",
+    "static/js/2.74290d08.chunk.js.LICENSE.txt": "/portfolioReact/static/js/2.74290d08.chunk.js.LICENSE.txt",
+    "static/media/hotel.png": "/portfolioReact/static/media/hotel.dff53aa2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.65b0f2ad.js",
+    "static/js/2.74290d08.chunk.js",
+    "static/css/main.73b32d4b.chunk.css",
+    "static/js/main.904e8d7e.chunk.js"
+  ]
+}
