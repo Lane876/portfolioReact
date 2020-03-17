@@ -2,26 +2,23 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <>
-      <div className="skills">
-        <i class="fab fa-html5 fa-5x"></i>
-        <i class="fab fa-css3-alt fa-5x"></i>
-        <i class="fab fa-sass fa-5x"></i>
-        <i class="fab fa-js fa-5x"></i>
-        <i class="fab fa-react  fa-5x"></i>
-      </div>
-      <div className="phono">
-        <div className="skillsphono1">
-          <i class="fab fa-html5 fa-5x"></i>
-          <i class="fab fa-css3-alt fa-5x"></i>
-          <i class="fab fa-sass fa-5x"></i>
-        </div>
-        <div className="skillsphono2">
-          <i class="fab fa-js fa-5x"></i>
-          <i class="fab fa-react fa-5x"></i>
+    <div className="skills">
+      <div className="rocking">
+        <h2 className="rocking-title">Rocking at...</h2>
+        <div className="icons">
+          <i className="fab fa-html5 fa-4x"></i>
+          <i className="fab fa-css3-alt fa-4x"></i>
+          <i className="fab fa-sass fa-4x"></i>
+          <i className="fab fa-js fa-4x"></i>
+          <i className="fab fa-react  fa-4x"></i>
+          <i className="fab fa-git  fa-4x"></i>
         </div>
       </div>
-    </>
+      <div className="want">
+        <h2 className="want-title">Interested in learning...</h2>
+        <i className="fab fa-node fa-4x"></i>
+      </div>
+    </div>
   );
 };
 
