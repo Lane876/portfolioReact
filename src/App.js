@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className="App">
-      {animationComplete === false ? <IntroOverlay /> : ""}
+      <IntroOverlay />
       <Navbar />
       <Switch>
         <Route exact path="/home" component={Home} />
