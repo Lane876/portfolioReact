@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
 import gsap from "gsap";
 import "./Style/App.scss";
@@ -10,11 +10,6 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 function App() {
-  // const [setanimationComplete] = useState(false);
-  // const completeAnimation = () => {
-  //   setanimationComplete(true);
-  // };
-
   useEffect(() => {
     const tl = gsap.timeline();
 
@@ -31,7 +26,6 @@ function App() {
       height: 0,
       ease: "expo.inOut",
       stagger: 0.4
-      // onComplete: completeAnimation
     });
   }, []);
 
