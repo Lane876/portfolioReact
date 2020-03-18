@@ -10,10 +10,10 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 function App() {
-  const [setanimationComplete] = useState(false);
-  const completeAnimation = () => {
-    setanimationComplete(true);
-  };
+  // const [setanimationComplete] = useState(false);
+  // const completeAnimation = () => {
+  //   setanimationComplete(true);
+  // };
 
   useEffect(() => {
     const tl = gsap.timeline();
@@ -30,8 +30,8 @@ function App() {
     }).to(".intro", 1.6, {
       height: 0,
       ease: "expo.inOut",
-      stagger: 0.4,
-      onComplete: completeAnimation
+      stagger: 0.4
+      // onComplete: completeAnimation
     });
   }, []);
 
