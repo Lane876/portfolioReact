@@ -23,7 +23,7 @@ class Navbar extends Component {
     return (
       <div className="wraper">
         <div className="logo">
-          <a href="/">
+          <a href="/home">
             <h3>M.</h3>
           </a>
         </div>

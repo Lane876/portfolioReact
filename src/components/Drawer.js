@@ -12,7 +12,7 @@ const Drawer = props => {
       <div className="drawer-links">
         <ul>
           <li>
-            <Link to="/" onClick={props.openclose} className="logo">
+            <Link to="/home" onClick={props.openclose} className="logo">
               M.
             </Link>
           </li>
