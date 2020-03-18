@@ -33,7 +33,8 @@ function App() {
     <div className="App">
       <IntroOverlay />
       <Navbar />
-      <Route exact path="/home" component={Home} />
+      <Home />
+      {/* <Route exact path="/home" component={Home} /> */}
       <Switch>
         <Route path="/skills" component={Skills} />
         <Route path="/projects" component={Projects} />
