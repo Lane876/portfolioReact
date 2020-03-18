@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     const tl = gsap.timeline();
 
-    tl.from(".main.title h2", 1.8, {
+    tl.from(".title h2", 1.8, {
       opacity: 0,
       y: 100,
       ease: "power4.out",
@@ -33,9 +33,8 @@ function App() {
     <div className="App">
       <IntroOverlay />
       <Navbar />
-      {/* <Home /> */}
-      <Route exact path="/home" component={Home} />
       <Switch>
+        <Route exact path="/home" component={Home} />
         <Route path="/skills" component={Skills} />
         <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contact} />
