@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     const tl = gsap.timeline();
 
-    tl.from(".title h2", 1.8, {
+    tl.from("h2", 1.8, {
       opacity: 0,
       y: 100,
       ease: "power4.out",
