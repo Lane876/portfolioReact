@@ -10,7 +10,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 function App() {
-  const [animationComplete, setanimationComplete] = useState(false);
+  const [setanimationComplete] = useState(false);
   const completeAnimation = () => {
     setanimationComplete(true);
   };
