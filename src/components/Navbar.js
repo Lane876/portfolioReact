@@ -5,11 +5,11 @@ import Drawer from "./Drawer";
 
 class Navbar extends Component {
   state = {
-    drawerOpen: false
+    drawerOpen: false,
   };
 
   toggleDrawer = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return { drawerOpen: !prevState.drawerOpen };
     });
   };
@@ -23,7 +23,7 @@ class Navbar extends Component {
     return (
       <div className="wraper">
         <div className="logo">
-          <a href="/home">
+          <a href="/">
             <h3>M.</h3>
           </a>
         </div>

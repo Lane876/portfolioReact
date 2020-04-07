@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Drawer = props => {
+const Drawer = (props) => {
   let classToggler = "drawer";
   if (props.toggle) {
     classToggler = "drawer open";
@@ -12,7 +12,7 @@ const Drawer = props => {
       <div className="drawer-links">
         <ul>
           <li>
-            <Link to="/home" onClick={props.openclose} className="logo">
+            <Link to="/" onClick={props.openclose} className="logo">
               M.
             </Link>
           </li>
