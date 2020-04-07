@@ -23,9 +23,9 @@ class Navbar extends Component {
     return (
       <div className="wraper">
         <div className="logo">
-          <a href="/">
+          <Link to="/">
             <h3>M.</h3>
-          </a>
+          </Link>
         </div>
         <div className="spacer"></div>
         <nav>
