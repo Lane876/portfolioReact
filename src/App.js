@@ -10,7 +10,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 const App = () => {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(true);
   useEffect(() => {
     const tl = gsap.timeline();
 
