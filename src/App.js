@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
 import gsap from "gsap";
 import "./Style/App.scss";
@@ -10,6 +10,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 const App = () => {
+  const [user, setUser] = useState(null);
   useEffect(() => {
     const tl = gsap.timeline();
 
@@ -27,7 +28,7 @@ const App = () => {
       ease: "expo.inOut",
       stagger: 0.4,
     });
-  }, []);
+  }, [user]);
 
   return (
     <div className="App">
