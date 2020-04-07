@@ -9,23 +9,23 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
-function App() {
+const App = () => {
   useEffect(() => {
     const tl = gsap.timeline();
 
-    tl.from("h2", 1.8, {
+    tl.from(".main h2", 1.8, {
       opacity: 0,
       y: 100,
       ease: "power4.out",
       delay: 1,
       skewY: 10,
       stagger: {
-        amount: 0.3
-      }
+        amount: 0.3,
+      },
     }).to(".intro", 1.6, {
       height: 0,
       ease: "expo.inOut",
-      stagger: 0.4
+      stagger: 0.4,
     });
   }, []);
 
@@ -41,6 +41,6 @@ function App() {
       </Switch>
     </div>
   );
-}
+};
 
 export default App;
